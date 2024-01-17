@@ -1,8 +1,6 @@
 import { Canvas } from '@react-three/fiber'
 import {useEffect, useState} from 'react'
 import HomeInfo from './components/HomeInfo'
-import Birds from './models/Birds'
-import Car from './models/Car'
 import Island from './models/island'
 import Man from './models/Man'
 import ManIdle from './models/ManIdle'
