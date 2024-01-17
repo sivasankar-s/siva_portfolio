@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const Navbar = () => {
@@ -11,9 +11,9 @@ const Navbar = () => {
 
         <nav className='flex text-md gap-4 sm:text-lg sm:gap-7 font-medium'>
 
-        <Link to='/about'>About</Link>
-        <Link to='/projects'>Projects</Link>
-        <Link to='/contact'>Contact</Link>
+        <NavLink className={({ isActive}) => isActive ? 'text-gray-500' : 'text-black'} to='/about'>About</NavLink>
+        <NavLink className={({ isActive}) => isActive ? 'text-gray-500' : 'text-black'} to='/projects'>Projects</NavLink>
+        <NavLink className={({ isActive}) => isActive ? 'text-gray-500' : 'text-black'} to='/contact'>Contact</NavLink>
         <Link target='_blank' to='https://github.com/sivasankar-s'><FaGithub  className='text-2xl sm:text-3xl'/></Link>
         <Link target='_blank' to='https://www.linkedin.com/in/sivasankar-s31/'><FaLinkedin className='text-2xl sm:text-3xl' /></Link>
         </nav>
