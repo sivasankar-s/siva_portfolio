@@ -116,4 +116,8 @@
     transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
   }
 
+  .canvas {
+    touch-action: auto !important;
+    }
+
 }

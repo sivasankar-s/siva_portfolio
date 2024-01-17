@@ -60,7 +60,7 @@ const Home = () => {
 
         </div>
 
-        <Canvas className={`w-full h-screen bg-transparent ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`}
+        <Canvas className={`w-full h-screen bg-transparent ${isRotating ? 'cursor-grabbing' : 'cursor-grab'} canvas`}
         camera={{near: 0.1, far: 1000}}
         >
             <directionalLight position={[1,1,1]} intensity={2}/>
