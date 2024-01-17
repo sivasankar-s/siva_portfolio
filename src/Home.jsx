@@ -1,6 +1,7 @@
 import { Canvas } from '@react-three/fiber'
-import {useEffect, useState} from 'react'
+import { useEffect, useState} from 'react'
 import HomeInfo from './components/HomeInfo'
+// import Loading from './components/Loading'
 import Island from './models/Island'
 import Man from './models/Man'
 import ManIdle from './models/ManIdle'
@@ -54,6 +55,10 @@ const Home = () => {
   return (
     <div className='w-full h-screen relative'>
 
+        
+
+        {/* <Suspense fallback={<Loading />}> */}
+
         <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
             {currentStage && <HomeInfo currentStage={currentStage}/>}
             {showDrag && <h1 className='text-md sm:text-xl font-semibold bg-white border-4 border-gray-500 rounded-2xl px-4 py-6 text-black'>Drag or Use Arrow keys to Explore...</h1>}
@@ -78,6 +83,8 @@ const Home = () => {
             {/* <Birds /> */}
            
         </Canvas>
+
+        {/* </Suspense> */}
     </div>
   )
 }

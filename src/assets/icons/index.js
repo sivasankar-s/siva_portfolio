@@ -27,6 +27,7 @@ import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 
+import loading from './loading.svg'
 import prisma from './prisma.svg'
 
 export {
@@ -58,5 +59,6 @@ export {
     contact,
     soundon,
     soundoff,
-    prisma
+    prisma,
+    loading
 }
