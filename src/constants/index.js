@@ -125,8 +125,9 @@ export const experiences = [
         iconBg: "#accbe1",
         date: "2023",
         points: [
-            "Developed a clone of Wormhole.app using React.js and firebase",
-            "Worked under Professor Dr.Mayank Agarwal during the project",
+            "Developed a clone of Wormhole.app under the guidance of Dr. Mayank Agarwal, IIT professor.",
+            "Implemented robust data synchronization using React.js and Firebase.",
+            "Integrated TinyURL API for efficient link shortening and crafted an intuitive UI with Tailwind CSS."
         ],
     },
     {
@@ -136,8 +137,11 @@ export const experiences = [
         iconBg: "#fbc3bc",
         date: "2023",
         points: [
-            "Developed a Pet adoption site using Next.js and other related technologies.",
-            "Worked under Professor Dr.Balasundaram during the project",
+            "Led the development of \"Adore A Pet\" under the mentorship of Dr. Balasundaram, an esteemed NIT professor.",
+            "Crafted a purpose-driven web application aimed at facilitating pet adoption and minimizing instances of pets being abandoned on streets due to the inability to find a suitable owner.",
+            "Leveraged cutting-edge technologies such as Next.js, MongoDB, Prisma, NextAuth.js, and Tailwind CSS to create a seamless and secure user experience.",
+            "Implemented a comprehensive system for users to share pet details, fostering a community-driven approach to pet adoption and responsible ownership.",
+            "Demonstrated adeptness in addressing real-world challenges through innovative and ethical software solutions."
         ],
     },
     
