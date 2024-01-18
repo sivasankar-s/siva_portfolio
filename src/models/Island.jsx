@@ -5,7 +5,7 @@ import { a } from '@react-spring/three'
 
 import islandScene from '../assets/3d/home9_compressed.glb'
 
-const Island = ({isRotating, setIsRotating, setCurrentStage, setDirection, setShowDrag, ...props}) => {
+const Island = ({isRotating, setIsRotating, setCurrentStage, setDirection, setShowDrag, ...props}) => { //setRunning props
     const islandRef = useRef();
 
     const {gl, viewport} = useThree();
@@ -75,6 +75,8 @@ const Island = ({isRotating, setIsRotating, setCurrentStage, setDirection, setSh
         }
     }
 
+    // let prevRotation = 0;
+
     useFrame(() => {
         if(!isRotating) {
             rotationSpeed.current *= dampingFactor;
@@ -85,12 +87,52 @@ const Island = ({isRotating, setIsRotating, setCurrentStage, setDirection, setSh
 
             islandRef.current.rotation.y += rotationSpeed.current
 
+            ////////////
+
+            const rotation = islandRef.current.rotation.y;
+
+                const normalizedRotation =
+        ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+
+        // prevRotation = normalizedRotation
+
+
+        // console.log("Previous rotation" + prevRotation.toFixed(1))
+        // console.log("Normalized rotation" + normalizedRotation.toFixed(1))
+        // if(normalizedRotation.toFixed(1) != prevRotation) {
+        //   setRunning(true)
+        // }
+        // prevRotation = normalizedRotation
+
+        switch (true) {
+          case normalizedRotation >= 5.45 && normalizedRotation <= 5.85:
+            setCurrentStage(3);
+            break;
+          case normalizedRotation >= 0.94 && normalizedRotation <= 1.35:
+            setCurrentStage(2);
+            break;
+          case normalizedRotation >= 1.8 && normalizedRotation <= 2.3:
+            setCurrentStage(1);
+            break;
+          case normalizedRotation >= 4.15 && normalizedRotation <= 4.5:
+            setCurrentStage(4);
+            break;
+          default:
+            setCurrentStage(null);
+        }
+
+            
+
             
         }else {
                 const rotation = islandRef.current.rotation.y;
 
                 const normalizedRotation =
         ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+
+        // prevRotation = normalizedRotation;
+
+
         // console.log(normalizedRotation)
 
       // Set the current stage based on the island's orientation

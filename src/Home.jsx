@@ -12,6 +12,7 @@ const Home = () => {
     const [isRotating, setIsRotating] = useState(false);
     const [currentStage, setCurrentStage] = useState(null)
     const [direction, setDirection] = useState('right');
+    // const [running, setRunning] = useState(false);
 
     const adjustIslandForScreenSize = () => {
         let screenScale = null;
@@ -85,7 +86,8 @@ const Home = () => {
             <hemisphereLight skyColor="#b1e1ff" groundColor='#000000' intensity={1}/>
 
             <Sky isRotating={isRotating}/>
-            <Island position={islandPosition} scale={islandScale} rotation={islandRotation} isRotating={isRotating} setIsRotating={setIsRotating} setCurrentStage={setCurrentStage} setDirection={setDirection} setShowDrag={setShowDrag}/>
+            <Island position={islandPosition} scale={islandScale} rotation={islandRotation} isRotating={isRotating} setIsRotating={setIsRotating} setCurrentStage={setCurrentStage} setDirection={setDirection} setShowDrag={setShowDrag} /> 
+            {/* setRunning={setRunning} */}
             
             {/* <Car scale={carScale} position={carPosition} rotation={[0.2, 20.35, 0.1]}/> */}
 

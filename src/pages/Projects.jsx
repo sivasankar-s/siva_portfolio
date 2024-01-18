@@ -11,7 +11,7 @@ const Projects = () => {
       </h1>
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-        <p>I do projects for fun. It makes me more excited. And I love building web apps that solves a problem in real time, no matter how small the problem or it is used or not. It gives me a satisfaction.</p>
+        <p>Explore my projects page, a testament to my proficiency as a full-stack developer. Each endeavor reflects a commitment to innovative solutions and showcases the depth of my technical expertise. Dive into a curated collection that underscores my dedication to excellence in web development.</p>
       </div>
 
       <div className='flex flex-wrap my-20 gap-16'>

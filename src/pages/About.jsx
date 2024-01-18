@@ -12,7 +12,7 @@ const About = () => {
       </h1>
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-        <p>I am a Fullstack developer from Tamil Nadu, India. I build web applications for Fun.</p>
+        <p>I am a Fullstack developer from Tamil Nadu, India. As a dedicated full-stack developer, I leverage my expertise to craft innovative and efficient solutions. With a passion for creating seamless user experiences and robust backend systems, I am committed to delivering excellence in every project. Explore my journey in the dynamic realm of web development.</p>
       </div>
 
       <div className='py-10 flex flex-col'>
@@ -33,7 +33,7 @@ const About = () => {
       <div className='py-16'>
             <h3 className='subhead-text'>Experience</h3>
             <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-              <p>I've experience of working under IIT professors and doing them projects. I am a fresher, and looking for Industrial experience.</p>
+              <p>As a budding full-stack developer, I gained valuable experience through internships under esteemed professors at IIT and NIT. Eager to apply my skills in a professional setting, I am actively seeking opportunities for meaningful industrial experience to further contribute and grow in the field.</p>
             </div>
 
             <div className='mt-12 flex'>
