@@ -1,4 +1,4 @@
-import { iit, nit } from "../assets/images";
+import { iit, nit, adoreapet, crimealert, wormholeclone } from "../assets/images";
 import {
     car,
     contact,
@@ -163,7 +163,7 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: adoreapet,
         theme: 'btn-back-red',
         name: 'Adore A Pet',
         description: 'Developed a web application (Pet Adoption Site) that allows users to give their pet and other users to contact the pet owners for Adoption. This is made for people who leave their pets in streets as they cannot find owners for them.',
@@ -171,11 +171,11 @@ export const projects = [
         link: 'https://adore-a-pet.vercel.app/',
     },
     {
-        iconUrl: threads,
+        iconUrl: crimealert,
         theme: 'btn-back-green',
         name: 'Crime Alert Web App',
         description: 'Created a Web app where can users can share about local crime incidents in their surroundings, and other users are notified and aware of it.',
-        techstack: 'React.js, Firebase, TailwindCSS',
+        techstack: 'React.js, Firebase, Twilio API, EmailJS API, TailwindCSS',
         link: 'https://crime-alert.netlify.app/',
     },
     // {
@@ -187,11 +187,11 @@ export const projects = [
     //     link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
     // },
     {
-        iconUrl: snapgram,
+        iconUrl: wormholeclone,
         theme: 'btn-back-pink',
         name: 'Wormhole Clone',
         description: 'Built a simple clone of Wormhole.app, allowing users to share files using generated link.',
-        techstack: 'React.js, Firebase, TailwindCSS',
+        techstack: 'React.js, Firebase, TinyURL API, TailwindCSS',
         link: 'https://trans-file.netlify.app/',
     },
     // {
