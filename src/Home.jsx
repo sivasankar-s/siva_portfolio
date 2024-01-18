@@ -1,7 +1,7 @@
 import { Canvas } from '@react-three/fiber'
-import { useEffect, useState} from 'react'
+import { useEffect, useState, Suspense} from 'react'
 import HomeInfo from './components/HomeInfo'
-// import Loading from './components/Loading'
+import Loading from './components/Loading'
 import Island from './models/Island'
 import Man from './models/Man'
 import ManIdle from './models/ManIdle'
@@ -15,6 +15,17 @@ const Home = () => {
 
     const adjustIslandForScreenSize = () => {
         let screenScale = null;
+        // let screenPosition = [1,-15.5,-41];
+        // let rotation = [0.3, 2.5, 0];
+
+        // if(window.innerWidth < 768){
+        //     screenScale = [35,35,35];
+        // } else {
+        //     screenScale = [43,43,43]
+        // }
+        // return [screenScale, screenPosition, rotation]
+
+
         let screenPosition = [1,-15.5,-41];
         let rotation = [0.3, 2.5, 0];
 
@@ -22,6 +33,7 @@ const Home = () => {
             screenScale = [35,35,35];
         } else {
             screenScale = [43,43,43]
+            // screenScale = [10,10,10]
         }
         return [screenScale, screenPosition, rotation]
     }

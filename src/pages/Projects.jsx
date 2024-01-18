@@ -16,7 +16,7 @@ const Projects = () => {
 
       <div className='flex flex-wrap my-20 gap-16'>
         {projects.map((project) => (
-          <div className='lg:w-[400px] w-full' key={project.name}>
+          <div className='lg:w-[400px] w-full bg-gray-200 drop-shadow-lg rounded-lg' key={project.name}>
             <div className='block-container w-12 h-12'>
               <div className={`btn-back rounded-xl ${project.theme}`} />
               <div className='btn-front rounded-xl flex justify-center items-center'>
@@ -24,7 +24,7 @@ const Projects = () => {
               </div>  
             </div>
 
-            <div className='mt-5 flex flex-col'>
+            <div className='mt-5 flex flex-col px-5 py-5'>
               <h4 className='text-2xl font-semibold'>
                 {project.name}
               </h4>
@@ -34,8 +34,8 @@ const Projects = () => {
               <p className='mt-3 text-slate-600'>
                 <span className='font-semibold'>Tech stack: </span>{project.techstack}
               </p>
-              <div className='mt-5  gap-2'>
-                <Link to={project.link} target="_blank" rel='noopener noreferrer' className='font-semibold text-gray-800 flex items-center'>
+              <div className='mt-8  gap-2 bg-gray-700 rounded-lg py-2 px-4  w-max'>
+                <Link to={project.link} target="_blank" rel='noopener noreferrer' className='font-semibold text-white flex items-center'>
                   <div className='flex'>
                 <p>Go to Site </p> 
                 <div className='ml-2 flex items-center'><FaArrowRightLong /></div>
