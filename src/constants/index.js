@@ -24,7 +24,8 @@ import {
     tailwindcss,
     threads,
     typescript,
-    prisma
+    prisma,
+    java
 } from "../assets/icons";
 
 export const skills = [
@@ -38,6 +39,11 @@ export const skills = [
         imageUrl: nextjs,
         name: "Next.js",
         type: "Frontend",
+    },
+    {
+        imageUrl: java,
+        name: "Java",
+        type: "Language",
     },
     {
         imageUrl: git,
@@ -106,11 +112,7 @@ export const skills = [
         name: "Tailwind CSS",
         type: "Frontend",
     },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
+    
     
     
 ];

@@ -29,6 +29,7 @@ import soundoff from './soundoff.png'
 
 import loading from './loading.svg'
 import prisma from './prisma.svg'
+import java from './java.svg'
 
 export {
     css,
@@ -60,5 +61,6 @@ export {
     soundon,
     soundoff,
     prisma,
-    loading
+    loading,
+    java
 }
