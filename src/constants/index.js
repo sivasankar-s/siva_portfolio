@@ -1,4 +1,4 @@
-import { iit, nit, adoreapet, crimealert, wormholeclone } from "../assets/images";
+import { iit, nit, adoreapet, crimealert, wormholeclone, crackathon } from "../assets/images";
 import {
     car,
     contact,
@@ -190,6 +190,14 @@ export const projects = [
     //     techstack: 'Next.js, MongoDB, Prisma, TailwindCSS',
     //     link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
     // },
+    {
+        iconUrl: crackathon,
+        theme: 'btn-back-blue',
+        name: 'Crackathon 2.0',
+        description: 'Built a responsive landing page for a 24 hours Hackathon event organized by our department in our College',
+        techstack: 'React.js, TailwindCSS',
+        link: 'https://crackathon24.online',
+    },
     {
         iconUrl: wormholeclone,
         theme: 'btn-back-pink',
